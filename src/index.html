@@ -1,204 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
     <title>IAG Contagem</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar-light bg-light">
-        <img src="./images/icon-1.png" width="60" height="60" />
-        <div style="float: right;" class="mt-2 mr-2">
-            <button type="button" class="btn btn-info mr-1" data-toggle="modal" data-target="#manhaModal">Manhã</button>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#noiteModal">Noite</button>
-        </div>
+      <img src="./images/icon-1.png" width="60" height="60" />
+      <div style="float: right;" class="mt-2 mr-2">
+        <button
+          type="button"
+          class="btn btn-info mr-1"
+          data-toggle="modal"
+          data-target="#manhaModal"
+        >
+          Manhã
+        </button>
+        <button
+          type="button"
+          class="btn btn-info"
+          data-toggle="modal"
+          data-target="#noiteModal"
+        >
+          Noite
+        </button>
+      </div>
     </nav>
 
     <div class="container col-11 mt-5 shadow p-3 mb-5 bg-white rounded">
-        <form>
-            <div class="form-group mt-1">
-                <input type="text" class="form-control form-control-lg" id="inputNome" placeholder="Nome" required>
-            </div>
+      <form>
+        <div class="form-group mt-2">
+          <input
+            type="text"
+            class="form-control form-control-lg"
+            id="inputNome"
+            placeholder="Nome"
+            required
+          />
+        </div>
 
-            <div class="form-check mt-1">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Manhã 10:00 Horas" required>
-                <label class="form-check-label" for="exampleRadios1">Manhã 10:00 Horas</label>
-            </div>
-            <div class="form-check mt-2">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Noite 18:00 Horas" required>
-                <label class="form-check-label" for="exampleRadios2">Noite 18:00 Horas</label>
-            </div>
-            <button type="submit" class="btn btn-success mt-2">Adicionar</button>
-        </form>
+        <div class="form-group mt-2">
+          <select
+            id="inputHours"
+            class="form-control form-control-lg"
+            aria-placeholder="Selecione"
+            required
+          >
+            <option selected>Selecione</option>
+            <option value="Manhã 10:00 horas">Manhã 10:00 horas</option>
+            <option value="Noite 18:00 horas">Noite 18:00 horas</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success mt-3">Adicionar</button>
+      </form>
     </div>
 
-
     <!-- Modal onde é aprezentado a listagem de manhã -->
-    <div class="modal fade" id="manhaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Lista Manhã</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Nome</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">11</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">12</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">13</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">14</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">15</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">16</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">17</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">18</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">19</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">20</th>
-                                <td>Larry the Bird</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="manhaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Lista Manhã</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nome</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal onde é aprezentado a listagem de noite -->
-    <div class="modal fade" id="noiteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Lista Noite</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <div
+      class="modal fade"
+      id="noiteModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Lista Noite</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </div>
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
 
-
-
+    <script>
+      // Your web app's Firebase configuration
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./firebase.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
